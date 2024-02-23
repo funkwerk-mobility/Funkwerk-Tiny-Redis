@@ -1,5 +1,11 @@
+**Note**: Repo is forked from https://github.com/adilbaig/Tiny-Redis . We are aiming to upstream, but need a repo
+we can make commits to in the short term.
+
+Currently, the main difference between this repo and upstream is TLS support using openssl.
+
 Tiny Redis
 ==========
+
 Redis driver for the D programming language. TinyRedis is fast, simple, intuitive, feature complete, unit-tested, forward compatible, has no dependencies and makes working with Redis trivial.
 
 It supports all of Redis's data types; strings, hashes, lists, sets, sorted sets, bitmaps and hyperloglogs. It also has simple functions for Lua eval, pipelining and transactions.

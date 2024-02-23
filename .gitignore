@@ -8,8 +8,5 @@
 .idea/workspace.xml
 .idea/tasks.xml
 
-# DUB
-dub.selections.json
-
 # TinyRedis
 libtinyredis.a

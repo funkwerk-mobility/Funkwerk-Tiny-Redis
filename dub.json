@@ -1,6 +1,6 @@
 {
-    "name": "tinyredis",
-    "description": "Redis driver for D.",
+    "name": "funkwerk-tinyredis",
+    "description": "Redis driver for D. (Funkwerk fork)",
     "authors": ["Adil Baig"],
     "homepage": "http://adilbaig.github.com/Tiny-Redis/",
     "license": "ISC",

@@ -7,7 +7,6 @@ module tinyredis.encoder;
 
 import std.array : Appender, appender;
 import std.conv : to, text;
-import std.format : format;
 import std.traits : isSomeChar, isSomeString, isArray;
 
 alias encode = toMultiBulk;
@@ -136,12 +135,12 @@ alias encode = toMultiBulk;
 		bulk_count++;
 	}
 
-	return "*%d\r\n%s".format(bulk_count, buffer[]);
+	return "*" ~ bulk_count.to!string ~ "\r\n" ~ buffer[];
 }
 
 @trusted auto toBulk(C)(const C[] str) if (isSomeChar!C)
 {
-	return "$%d\r\n%s\r\n".format(str.length, str);
+	return "$" ~ str.length.to!string ~ "\r\n" ~ str ~ "\r\n";
 }
 
 debug(tinyredis) @trusted C[] escape(C)(C[] str) if (isSomeChar!C)
